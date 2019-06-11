@@ -10,7 +10,7 @@ public abstract class Hamburger extends Produtos {
 
 	@Override
 	public String toString() {
-		return "Hamburger [preço=" + preço + "]";
+		return "Hamburger\n---------------------------";
 	}
 	
 	

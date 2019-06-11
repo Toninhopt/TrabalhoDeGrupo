@@ -4,34 +4,30 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
+		Tabuleiro t = new Tabuleiro();
 		Produtos p = new Produtos();
-		Mc mc = new Mc();
-		
-		//UP
-		
+		Mc mc = (Mc) t;
+
 		Produtos bigtasty = new BigTasty();
 		Produtos natura = new Natura();
 		Produtos batata = new Batata();
 		Produtos bebida = new Bebida();
 		Produtos menu = new Menu();
 		
-		//DOWN
 		
-		BigTasty bigTasty = (BigTasty) bigtasty;
-		Natura Natura = (Natura) natura;
-		Batata Batata = (Batata) batata;
-		Bebida Bebida = (Bebida) bebida;
-		Menu Menu = (Menu) menu;
+		
+		
+		
+		mc.adicionar(menu);
+		mc.adicionar(bebida);
+		mc.adicionar(batata);
+		t.pedidos();
+		System.out.println("Total a pagar: " + mc.finalizarPedido() + "€");
+		mc.pagamento(20);
+		System.out.println("Pagamento: " + mc.pagamento(8.0) + "€");
+		
 		
 	
-		
-		mc.adicionar(Menu);
-		mc.adicionar(bigtasty);
-		mc.adicionar(natura);
-		System.out.println(mc.finalizarPedido() + "€");
-		
-		
-		mc.pedidos();
 
 		
 		

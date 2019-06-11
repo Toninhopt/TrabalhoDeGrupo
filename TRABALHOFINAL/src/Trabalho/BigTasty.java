@@ -2,7 +2,7 @@ package Trabalho;
 
 public class BigTasty extends Hamburger {
 	
-	protected double preço = 3.00;
+	private double preço = 3.00;
 	
 	
 	public double getPreço() {
@@ -17,7 +17,7 @@ public class BigTasty extends Hamburger {
 
 	@Override
 	public String toString() {
-		return "BigTasty [preço=" + preço + "]";
+		return "Hamburger BigTasty\n----------------------------------";
 	}
 	
 	

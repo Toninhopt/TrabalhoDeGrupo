@@ -2,7 +2,7 @@ package Trabalho;
 
 public class Natura extends Hamburger {
 
-	protected double preço = 2.00;
+	private double preço = 2.00;
 	
 	public double getPreço() {
 		return preço;
@@ -11,7 +11,7 @@ public class Natura extends Hamburger {
 
 	@Override
 	public String toString() {
-		return "Natura [preço=" + preço + "]";
+		return "Hamburger Natura\n----------------------------------";
 	}
 	
 	

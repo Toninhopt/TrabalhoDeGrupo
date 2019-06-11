@@ -4,35 +4,33 @@ import java.util.ArrayList;
 
 public class Mc {
 	
-	protected Tabuleiro pedir;
-	protected ArrayList<String> pedidos = new ArrayList<>();
-	
-	
-	
 	ArrayList<Produtos> pedido = new ArrayList<Produtos>();
 	
 	
 	public void adicionar(Produtos produto) {
 		pedido.add(produto);
-		
 	}
 	
 	public void remove(Produtos produto) {
+		if (pedido.size() == 0) {
+			System.out.println("Nao existe produtos para remover");
+		} else {
 		pedido.remove(produto);
-	}
-	
-	public void pedidos() {
-		for (Produtos produtos : pedido) {
-			System.out.println(produtos);
 		}
 	}
 	
 	public double finalizarPedido() {
 		
 		Pagamento p = new Pagamento(pedido);
-		return p.conta();
-		
+		return p.conta();	
 	}
+	
+	public double pagamento(double valor) {
+		Pagamento p = new Pagamento(pedido);
+		return p.pagar(valor);
+	}
+	
+	public void pedidos() {}
 	
 	
 }

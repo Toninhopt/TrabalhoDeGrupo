@@ -2,9 +2,10 @@ package Trabalho;
 
 public class Menu extends Produtos {
 	
+	protected Hamburger hamburger;
 	protected Bebida bebida;
 	protected Batata batata;
-	protected double preço = 6.50;
+	private double preço = 6.00;
 	
 	
 
@@ -18,7 +19,7 @@ public class Menu extends Produtos {
 
 	@Override
 	public String toString() {
-		return "BigTasty" + ", bebida" + ", batata" + " preço ";
+		return "MENU: BigTasty" + "com Bebida" + " e Batatas \n----------------------------------";
 	}
 
 	

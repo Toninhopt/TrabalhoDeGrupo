@@ -2,7 +2,7 @@ package Trabalho;
 
 public class Batata extends Produtos {
 	
-	protected double preço = 1.00;
+	private double preço = 1.00;
 	
 	
 	
@@ -14,7 +14,7 @@ public class Batata extends Produtos {
 
 	@Override
 	public String toString() {
-		return "Batata [preço=" + preço + "]";
+		return "Batatas\n---------------------------------";
 	}
 
 	
