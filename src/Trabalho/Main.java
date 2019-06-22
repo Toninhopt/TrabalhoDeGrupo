@@ -3,31 +3,24 @@ package Trabalho;
 public class Main {
 	
 	public static void main(String[] args) {
-			
+		
 		Tabuleiro t = new Tabuleiro();
 		Mc mc = new Mc();
+		BigTasty bigtasty = new BigTasty(4.00);
+		Batata batata = new Batata(1.00);
+		Bebida bebida = new Bebida(1.00);
+		Menu menu = new Menu(bigtasty, bebida, batata, 5.00);
+		Produtos produtos = new Produtos();
 		
-		Produto bigtasty = new BigTasty("Hamburger BigTasty", 3.00);
-		Produto natura = new Natura("Hamburger Natura", 2.00);
-		Produto batata = new Batata("Batatoide", 1.00);
-		Produto bebida = new Bebida("Coca-cola", 1.00);
-		Produto menu = new MenuBigTasty("MenuBigTasty", 5.00, bigtasty, bebida, batata);
 		
-		
-		t.adicionar(menu);
-		t.adicionar(bebida);
-		t.adicionar(batata);
-		t.adicionar(bigtasty);
-		t.adicionar(natura);
-		t.adicionar(natura);
-		t.adicionar(bigtasty);
-		t.adicionar(natura);
+		t.add(bigtasty);
+		t.add(bebida);
+		t.add(batata);
+		t.add(menu);
 		t.pedidos();
 		
-		System.out.println("Total a pagar: " + t.finalizarPedido() + "€");
-		t.pagar(false);
 		
-	
+		
 	}
 	
 }
