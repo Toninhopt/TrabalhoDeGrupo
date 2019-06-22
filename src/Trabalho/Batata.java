@@ -7,11 +7,11 @@ package Trabalho;
 public class Batata extends Produto {
 
 	/**
-	 * Metodo acessor para buscar preço
+	 * Metodo acessor para buscar preco
 	 */
 	@Override
-	public double getPreço() {
-		return super.getPreço();
+	public double getPreco() {
+		return super.getPreco();
 	}
 
 	/**
@@ -24,10 +24,10 @@ public class Batata extends Produto {
 	/**
 	 * Metodo Construtor
 	 * @param nome
-	 * @param preço
+	 * @param preco
 	 */
-	public Batata(String nome, double preço) {
-		super(nome, preço);
+	public Batata(String nome, double preco) {
+		super(nome, preco);
 	}
 	/**
 	 * Metodo que retorna o nome e cria nova linha

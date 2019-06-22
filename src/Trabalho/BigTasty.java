@@ -7,11 +7,11 @@ package Trabalho;
 public class BigTasty extends Hamburger {
 
 	/**
-	 * Metodo acessor para buscar preço
+	 * Metodo acessor para buscar preco
 	 */
 	@Override
-	public double getPreço() {
-		return super.getPreço();
+	public double getpreco() {
+		return super.getpreco();
 	}
 
 	/**
@@ -24,10 +24,10 @@ public class BigTasty extends Hamburger {
 	/**
 	 * Metodo construtor
 	 * @param nome
-	 * @param preço
+	 * @param preco
 	 */
-	public BigTasty(String nome, double preço) {
-		super(nome, preço);
+	public BigTasty(String nome, double preco) {
+		super(nome, preco);
 	}
 	/**
 	 * Metodo que retorna o nome e cria nova linha
