@@ -5,16 +5,16 @@ public class Menu extends Produtos {
 	protected Hamburger hamburger;
 	protected Bebida bebida;
 	protected Batata batata;
-	private double preço = 6.00;
+	private double preco = 6.00;
 	
 	
 
-	public void setPreço(double preço) {
-		this.preço = preço;
+	public void setpreco(double preco) {
+		this.preco = preco;
 	}
 
-	public double getPreço() {
-		return preço;
+	public double getpreco() {
+		return preco;
 	}
 
 	@Override

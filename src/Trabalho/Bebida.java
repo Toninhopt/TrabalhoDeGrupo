@@ -1,22 +1,39 @@
 package Trabalho;
-
-public class Bebida extends Produtos {
+/**
+ * 
+ * @author Hugo Duarte, André Ribeiro, Teresa Santos
+ *
+ */
+public class Bebida extends Produto {
 	
-	protected double preço = 1.00;
+	/**
+	 * Metodo acessor para buscar preco
+	 */
+	@Override
+	public double getpreco() {
+		return super.getpreco();
+	}
 
+	/**
+	 * Metodo acessor para buscar nome
+	 */
+	@Override
+	public String getNome() {
+		return super.getNome();
+	}
+	/**
+	 * Metodo Construtor
+	 * @param nome
+	 * @param preco
+	 */
+	public Bebida(String nome, double preco) {
+		super(nome, preco);
+	}
+	/**
+	 * Metodo que retorna o nome e cria nova linha
+	 */
 	@Override
 	public String toString() {
-		return "Bebida [preço=" + preço + "]";
-	}
-
-	public Bebida(double preço) {
-		super();
-		this.preço = preço;
-	}
-	
-	
-	
-	
-	
-	
+		return getNome()+"\n----------------------------------";
+	}	
 }

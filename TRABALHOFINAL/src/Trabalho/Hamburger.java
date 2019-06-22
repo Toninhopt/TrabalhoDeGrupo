@@ -1,20 +1,32 @@
 package Trabalho;
-
-public abstract class Hamburger extends Produtos {
+/**
+ * 
+ * @author Hugo Duarte
+ *
+ */
+public abstract class Hamburger extends Produto {
 	
-	protected double preço;
-
-	public double getPreço() {
-		return preço;
-	}
-
+	/**
+	 * Metodo acessor super
+	 */
+	
 	@Override
-	public String toString() {
-		return "Hamburger\n---------------------------";
+	public double getPreço() {
+		return super.getPreço();
 	}
-	
-	
-	
-	
-	
+	/**
+	 * Metodo acessor super	
+	 */
+	@Override
+	public String getNome() {
+		return super.getNome();
+	}
+	/**
+	 * Metodo construtor
+	 * @param nome
+	 * @param preço
+	 */
+	public Hamburger(String nome, double preço) {
+		super(nome, preço);
+	}
 }

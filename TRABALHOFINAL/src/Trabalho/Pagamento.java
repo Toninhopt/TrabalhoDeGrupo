@@ -21,19 +21,19 @@ public class Pagamento extends Tabuleiro {
 		for (int i = 0; i < pagamento.size(); i++) {
 			Produtos a = getPagamnto(i);
 			if (a instanceof BigTasty) {
-				soma += ((BigTasty) a).getPreço();
+				soma += ((BigTasty) a).getpreco();
 			}
 			if (a instanceof Natura) {
-				soma += ((Natura) a).getPreço();
+				soma += ((Natura) a).getpreco();
 			}
 			if (a instanceof Bebida) {
-				soma += ((Bebida) a).getPreço();
+				soma += ((Bebida) a).getpreco();
 			}
 			if (a instanceof Batata) {
-				soma += ((Batata) a).getPreço();
+				soma += ((Batata) a).getpreco();
 			}
 			if (a instanceof Menu) {
-				soma += ((Menu) a).getPreço();
+				soma += ((Menu) a).getpreco();
 			}
 			
 		}
@@ -41,26 +41,26 @@ public class Pagamento extends Tabuleiro {
 	}
 	
 	public double pagar(double valor) {
-		int preço = 0;
+		int preco = 0;
 		for (int i = 0; i < pagamento.size(); i++) {
 			Produtos a = getPagamnto(i);
 			if (a instanceof BigTasty) {
-				preço += ((BigTasty) a).getPreço();
+				preco += ((BigTasty) a).getpreco();
 			}
 			if (a instanceof Natura) {
-				preço += ((Natura) a).getPreço();
+				preco += ((Natura) a).getpreco();
 			}
 			if (a instanceof Bebida) {
-				preço += ((Bebida) a).getPreço();
+				preco += ((Bebida) a).getpreco();
 			}
 			if (a instanceof Batata) {
-				preço += ((Batata) a).getPreço();
+				preco += ((Batata) a).getpreco();
 			}
 			if (a instanceof Menu) {
-				preço += ((Menu) a).getPreço();
+				preco += ((Menu) a).getpreco();
 			}	
 		}	
-		return preço - valor;
+		return preco - valor;
 	}
 
 }

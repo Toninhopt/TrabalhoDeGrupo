@@ -1,24 +1,43 @@
 package Trabalho;
-
+/**
+ * 
+ * @author Hugo Duarte
+ *
+ */
 public class BigTasty extends Hamburger {
-	
-	private double preço = 3.00;
-	
-	
+
+	/**
+	 * Metodo acessor para buscar preço
+	 */
+	@Override
 	public double getPreço() {
-		return preço;
+		return super.getPreço();
 	}
 
-	public void setPreço(double preço) {
-		this.preço = preço;
+	/**
+	 * Metodo acessor para buscar nome
+	 */
+	@Override
+	public String getNome() {
+		return super.getNome();
 	}
-
-	
-
+	/**
+	 * Metodo construtor
+	 * @param nome
+	 * @param preço
+	 */
+	public BigTasty(String nome, double preço) {
+		super(nome, preço);
+	}
+	/**
+	 * Metodo que retorna o nome e cria nova linha
+	 */
 	@Override
 	public String toString() {
-		return "Hamburger BigTasty\n----------------------------------";
+		return getNome()+"\n----------------------------------";
 	}
+
+	
 	
 	
 	
