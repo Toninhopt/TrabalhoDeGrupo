@@ -7,11 +7,11 @@ package Trabalho;
 public class Bebida extends Produto {
 	
 	/**
-	 * Metodo acessor para buscar preco
+	 * Metodo acessor para buscar preço
 	 */
 	@Override
-	public double getpreco() {
-		return super.getpreco();
+	public double getPreço() {
+		return super.getPreço();
 	}
 
 	/**
@@ -24,10 +24,10 @@ public class Bebida extends Produto {
 	/**
 	 * Metodo Construtor
 	 * @param nome
-	 * @param preco
+	 * @param preço
 	 */
-	public Bebida(String nome, double preco) {
-		super(nome, preco);
+	public Bebida(String nome, double preço) {
+		super(nome, preço);
 	}
 	/**
 	 * Metodo que retorna o nome e cria nova linha

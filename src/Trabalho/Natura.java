@@ -8,11 +8,11 @@ package Trabalho;
 public class Natura extends Hamburger {
 	
 	/**
-	 * Metodo acessor para buscar preco
+	 * Metodo acessor para buscar preço
 	 */
 	@Override
-	public double getpreco() {
-		return super.getpreco();
+	public double getPreço() {
+		return super.getPreço();
 	}
 	/**
 	 * Metodo acessor para buscar nome
@@ -24,10 +24,10 @@ public class Natura extends Hamburger {
 	/**
 	 * Construtor do Hamburger Natura
 	 * @param nome
-	 * @param preco
+	 * @param preço
 	 */
-	public Natura(String nome, double preco) {
-		super(nome, preco);
+	public Natura(String nome, double preço) {
+		super(nome, preço);
 	}
 	/**
 	 * Metodo que retorna o nome e cria nova linha

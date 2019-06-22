@@ -11,8 +11,8 @@ public abstract class Hamburger extends Produto {
 	 */
 	
 	@Override
-	public double getpreco() {
-		return super.getpreco();
+	public double getPreço() {
+		return super.getPreço();
 	}
 	/**
 	 * Metodo acessor super	
@@ -24,9 +24,9 @@ public abstract class Hamburger extends Produto {
 	/**
 	 * Metodo construtor
 	 * @param nome
-	 * @param preco
+	 * @param preço
 	 */
-	public Hamburger(String nome, double preco) {
-		super(nome, preco);
+	public Hamburger(String nome, double preço) {
+		super(nome, preço);
 	}
 }

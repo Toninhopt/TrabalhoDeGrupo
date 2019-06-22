@@ -26,14 +26,14 @@ public class Pagamento {
 		this.pagamento = pagamento;
 	}
 	/**
-	 * Soma o preco do produto sempre que é adicionado
+	 * Soma o preço do produto sempre que é adicionado
 	 * @return
 	 */
 	public double conta() {
 		double soma = 0;
 		for (int i = 0; i < pagamento.size(); i++) {
 			Produto a = getPagamento(i);
-				soma += Math.abs(a.getpreco());	
+				soma += Math.abs(a.getPreço());	
 		}
 		return soma;
 	}
