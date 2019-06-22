@@ -1,31 +1,22 @@
 package Trabalho;
 
 import java.util.ArrayList;
-
+/**
+ * 
+ * @author Hugo Duarte, André Ribeiro, Teresa Santos
+ *
+ */
 public class Mc {
 	
-	protected Pagamento pagar;
-	protected Tabuleiro pedir;
-	protected ArrayList<String> pedidos = new ArrayList<>();
-	protected double pagamento;
-
-		
-	public double pagar(int i) {
-		
-		return 0;
-		
-	}
-	
-	public void pedir(Tabuleiro pedir) {
-	
-	}
-	
-	public void pedidos( ArrayList<String>pedidos) {
-		for (int i = 0; i < pedidos.size(); i++) {
-			
-		}
+	ArrayList<Tabuleiro> tabuleiro = new ArrayList<>(); 
+	public void newTab() {
+		Tabuleiro t = new Tabuleiro();
+		tabuleiro.add(t);
 	}
 	
 	
 	
 }
+	
+	
+	
