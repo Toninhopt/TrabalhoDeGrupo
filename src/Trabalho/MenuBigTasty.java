@@ -33,7 +33,7 @@ public class MenuBigTasty extends Produto {
 	 * @param batata
 	 */
 	public MenuBigTasty(String nome, double preco, Produto bigtasty, Produto bebida, Produto batata) {
-		super(nome, preco);
+		super( preco,nome);
 		this.hamburger = (Hamburger) bigtasty;
 		this.bebida = (Bebida) bebida;
 		this.batata = (Batata) batata;

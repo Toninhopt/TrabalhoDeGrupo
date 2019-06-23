@@ -27,7 +27,7 @@ public class Batata extends Produto {
 	 * @param preco
 	 */
 	public Batata(String nome, double preco) {
-		super(nome, preco);
+		super(preco,nome);
 	}
 	/**
 	 * Metodo que retorna o nome e cria nova linha

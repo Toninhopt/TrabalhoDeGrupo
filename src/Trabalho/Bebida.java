@@ -27,7 +27,7 @@ public class Bebida extends Produto {
 	 * @param preco
 	 */
 	public Bebida(String nome, double preco) {
-		super(nome, preco);
+		super(preco,nome);
 	}
 	/**
 	 * Metodo que retorna o nome e cria nova linha

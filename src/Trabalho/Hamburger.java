@@ -27,6 +27,6 @@ public abstract class Hamburger extends Produto {
 	 * @param preco
 	 */
 	public Hamburger(String nome, double preco) {
-		super(nome, preco);
+		super(preco,nome);
 	}
 }
