@@ -1,17 +1,17 @@
 package Trabalho;
 /**
  * 
- * @author Hugo Duarte, André Ribeiro, Teresa Santos
+ * @author Hugo Duarte
  *
  */
 public class BigTasty extends Hamburger {
 
 	/**
-	 * Metodo acessor para buscar preco
+	 * Metodo acessor para buscar preço
 	 */
 	@Override
-	public double getpreco() {
-		return super.getpreco();
+	public double getPreco() {
+		return super.getPreco();
 	}
 
 	/**
@@ -24,10 +24,10 @@ public class BigTasty extends Hamburger {
 	/**
 	 * Metodo construtor
 	 * @param nome
-	 * @param preco
+	 * @param preço
 	 */
-	public BigTasty(String nome, double preco) {
-		super(nome, preco);
+	public BigTasty(String nome, double preço) {
+		super(nome, preço);
 	}
 	/**
 	 * Metodo que retorna o nome e cria nova linha

@@ -1,17 +1,17 @@
 package Trabalho;
 /**
  * 
- * @author Hugo Duarte, André Ribeiro, Teresa Santos
+ * @author Hugo Duarte
  *
  */
 public class Batata extends Produto {
 
 	/**
-	 * Metodo acessor para buscar preco
+	 * Metodo acessor para buscar preço
 	 */
 	@Override
-	public double getpreco() {
-		return super.getpreco();
+	public double getPreco() {
+		return super.getPreco();
 	}
 
 	/**
@@ -24,10 +24,10 @@ public class Batata extends Produto {
 	/**
 	 * Metodo Construtor
 	 * @param nome
-	 * @param preco
+	 * @param preço
 	 */
 	public Batata(String nome, double preco) {
-		super(preco,nome);
+		super(preco, nome);
 	}
 	/**
 	 * Metodo que retorna o nome e cria nova linha

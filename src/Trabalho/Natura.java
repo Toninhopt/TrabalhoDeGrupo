@@ -1,19 +1,18 @@
 package Trabalho;
-
 /**
  * 
- * @author Hugo Duarte, André Ribeiro, Teresa Santos
+ * @author Hugo Duarte
  *
  */
 public class Natura extends Hamburger {
-	
 	/**
-	 * Metodo acessor para buscar preço
+	 * Metodo acessor para buscar preco
 	 */
 	@Override
-	public double getpreco() {
-		return super.getpreco();
+	public double getPreco() {
+		return super.getPreco();
 	}
+	
 	/**
 	 * Metodo acessor para buscar nome
 	 */
@@ -24,7 +23,7 @@ public class Natura extends Hamburger {
 	/**
 	 * Construtor do Hamburger Natura
 	 * @param nome
-	 * @param preco
+	 * @param pre�o
 	 */
 	public Natura(String nome, double preco) {
 		super(nome, preco);

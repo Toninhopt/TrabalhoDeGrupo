@@ -1,7 +1,7 @@
 package Trabalho;
 /**
  * 
- * @author Hugo Duarte, André Ribeiro, Teresa Santos
+ * @author Hugo Duarte
  *
  */
 public abstract class Hamburger extends Produto {
@@ -9,10 +9,9 @@ public abstract class Hamburger extends Produto {
 	/**
 	 * Metodo acessor super
 	 */
-	
 	@Override
-	public double getpreco() {
-		return super.getpreco();
+	public double getPreco() {
+		return super.getPreco();
 	}
 	/**
 	 * Metodo acessor super	
@@ -24,9 +23,9 @@ public abstract class Hamburger extends Produto {
 	/**
 	 * Metodo construtor
 	 * @param nome
-	 * @param preco
+	 * @param preço
 	 */
 	public Hamburger(String nome, double preco) {
-		super(preco,nome);
+		super(preco, nome);
 	}
 }

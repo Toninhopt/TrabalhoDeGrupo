@@ -1,8 +1,7 @@
 package Trabalho;
 /**
  * 
- * @author Hugo Duarte, André Ribeiro, Teresa Santos
- *
+ * @author Hugo Duarte
  *
  */
 public class MenuBigTasty extends Produto {
@@ -14,8 +13,8 @@ public class MenuBigTasty extends Produto {
 	 * Metodo acessor para buscar preço
 	 */
 	@Override
-	public double getpreco() {
-		return super.getpreco();
+	public double getPreco() {
+		return super.getPreco();
 	}
 	/**
 	 * Metodo acessor para buscar nome
@@ -27,13 +26,13 @@ public class MenuBigTasty extends Produto {
 	/**
 	 * Metodo Construtor
 	 * @param nome
-	 * @param preco
+	 * @param preço
 	 * @param bigtasty
 	 * @param bebida
 	 * @param batata
 	 */
 	public MenuBigTasty(String nome, double preco, Produto bigtasty, Produto bebida, Produto batata) {
-		super( preco,nome);
+		super(preco, nome);
 		this.hamburger = (Hamburger) bigtasty;
 		this.bebida = (Bebida) bebida;
 		this.batata = (Batata) batata;

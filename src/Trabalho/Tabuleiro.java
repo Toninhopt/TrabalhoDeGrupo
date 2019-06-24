@@ -3,8 +3,7 @@ package Trabalho;
 import java.util.ArrayList;
 /**
  * 
- * @author Hugo Duarte, André Ribeiro, Teresa Santos
- *
+ * @author Hugo Duarte
  *
  */
 public class Tabuleiro {
@@ -18,26 +17,35 @@ public class Tabuleiro {
 		pedido.add(produto);
 	}
 	/**
-	 * Vai remover um produto que já foi inserido
+	 * Vai remover um produto que j� foi inserido
 	 * @param produto
 	 */
 	public void remove(Produto produto) {
-		if (pedido.size() == 0) {
-			System.out.println("Nao existe produtos para remover");
-		} else {
-		pedido.remove(produto);
+		try {
+			if (!pedido.contains(produto)) {
+				throw new IllegalArgumentException();
+			} else {
+			pedido.remove(produto);
+			}
+		} catch (Exception e) {
+			System.out.println("Nao consegue apagar porque nao existe");
 		}
+		
 	}
 	/**
 	 * Finaliza um pedido de um determinado tabulerio
 	 * @return
 	 */
 	public double finalizarPedido() {
-		if (pedido.size() == 0) {
-			System.out.println("Nao possui pedido algum");
-		} else {
-			Pagamento p = new Pagamento(pedido);
-			return p.conta();	
+		try {
+			if (pedido.size() == 0) {
+				throw new IllegalArgumentException();
+			} else {
+				Pagamento p = new Pagamento(pedido);	
+				return p.conta();
+			}
+		} catch (IllegalArgumentException e) {
+			System.out.println("Para finalizar o pedido deve adicionar algum produto");
 		}
 		return 0;
 	}

@@ -3,8 +3,7 @@ package Trabalho;
 import java.util.ArrayList;
 /**
  * 
- * @author Hugo Duarte, AndrÃ© Ribeiro, Teresa Santos
- *
+ * @author Hugo Duarte
  *
  */
 public class Pagamento {
@@ -27,14 +26,15 @@ public class Pagamento {
 		this.pagamento = pagamento;
 	}
 	/**
-	 * Soma o preco do produto sempre que Ã© adicionado
+	 * Soma o preço do produto sempre que é adicionado
 	 * @return
 	 */
 	public double conta() {
+		
 		double soma = 0;
 		for (int i = 0; i < pagamento.size(); i++) {
 			Produto a = getPagamento(i);
-				soma += Math.abs(a.getpreco());	
+				soma += Math.abs(a.getPreco());	
 		}
 		return soma;
 	}
@@ -44,11 +44,11 @@ public class Pagamento {
 	 * @return
 	 */
 	public boolean pagar(boolean pagar) {
-		System.out.println("EstÃ¡ pago?");
+		System.out.println("Está pago?");
 		if (pagar == false) {
 			System.out.println("Tem que pagar");	
 		} else {
-			System.out.println("EstÃ¡ pago!");
+			System.out.println("Está pago!");
 		}
 		return pagar;
 		

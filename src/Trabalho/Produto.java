@@ -1,19 +1,19 @@
 package Trabalho;
 /**
  * 
- * @author Hugo Duarte, André Ribeiro, Teresa Santos
- *
+ * @author Hugo Duarte
  *
  */
 public class Produto {
 	
 	protected double preco;
 	protected String nome;
+	
 	/**
 	 * Metodo acessor para buscar preço
 	 * @return
 	 */
-	public double getpreco() {
+	public double getPreco() {
 		return preco;
 	}
 	/**
@@ -25,14 +25,13 @@ public class Produto {
 	}
 	/**
 	 * Metodo construtor
-	 * @param preco
+	 * @param preço
 	 * @param nome
 	 */
 	public Produto(double preco, String nome) {
 		super();
 		this.preco = preco;
 		this.nome = nome;
-		
 	}
 	
 	
